@@ -6,3 +6,6 @@
 * 外部 JavaScript 文件的文件扩展名是 .js。
 * 如需使用外部文件，请在 <script> 标签的 "src" 属性中设置该 .js 文件
 * **外部脚本不能包含 <script> 标签。**
+### 操作 HTML 元素
+* 如需从 JavaScript 访问某个 HTML 元素，您可以使用 document.getElementById(id) 方法。
+* 请使用 "id" 属性来标识 HTML 元素
