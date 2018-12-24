@@ -304,6 +304,39 @@ catch(err)
 * 如果把 throw 与 try 和 catch 一起使用，那么您能够控制程序流，并生成自定义的错误消息。
 * 语法: throw exception
 * 异常可以是 JavaScript 字符串、数字、逻辑值或对象
+# JS DOM(文档对象模型)
+* **查找 HTML 元素
+  * 通过 id 找到 HTML 元素  //getElementById
+  * 通过标签名找到 HTML 元素//getElementsByTagName
+  * 通过类名找到 HTML 元素
+## DOM HTML
+* **HTML DOM 允许 JavaScript 改变 HTML 元素的内容。
+### 改变 HTML 输出流
+* 在 JavaScript 中，document.write() 可用于直接向 HTML 输出流写内容。
+* 提示：**绝不要使用在文档加载之后使用 document.write()。这会覆盖该文档。
+### 改变 HTML 内容
+* 修改 HTML 内容的最简单的方法时使用 innerHTML 属性。
+* 如需改变 HTML 元素的HTML DOM 允许 JavaScript 改变 HTML 元素的样式内容，请使用这个语法：
+  * document.getElementById(id).innerHTML=new HTML
+### 改变 HTML 属性
+* 如需改变 HTML 元素的属性，请使用这个语法：document.getElementById(id).attribute=new value
+## DOM CSS
+* **HTML DOM 允许 JavaScript 改变 HTML 元素的样式
+### 改变 HTML 样式
+* 如需改变 HTML 元素的样式，请使用这个语法：document.getElementById(id).style.property=new style
+* 隐藏文本：document.getElementById('demo').style.visibility = 'hidden'
+* 显示文本：document.getElementById('demo').style.visibility = 'visible'
+
+
+
+
+
+
+
+
+
+
+
 
 
 
