@@ -189,19 +189,121 @@ function myFunction(var1,var2)
 * 这条语句：
   * carname="Volvo";
 * 将声明一个全局变量 carname，即使它在函数内执行。
-
-
-
-
-
-
-
-
-
-
-
-
-
+### JS运算符
+* **如果把数字与字符串相加，结果将成为字符串。**
+## JS比较与逻辑运算符
+* `===`运算符，比较的是`值和类型`，例如x = 5,x === "5" 为false，因为类型不相同。
+## JS条件语句
+* if or if...else  or if...else if...else
+* switch
+### switch
+* switch 语句用于基于不同的条件来执行不同的动作。
+* default 关键词
+  * 用 default 关键词来规定匹配不存在时做的事情
+## JS 循环
+* 循环可以将代码块执行指定的次数。
+* 不同类型的循环
+  * JavaScript 支持不同类型的循环：
+  * for - 循环代码块一定的次数
+  * for/in - 循环遍历对象的属性
+  * while - 当指定的条件为 true 时循环指定的代码块
+  * do/while - 同样当指定的条件为 true 时循环指定的代码块
+### for循环
+```
+for (语句 1; 语句 2; 语句 3)
+  {
+  被执行的代码块
+  }
+```
+* **语句 1
+  * 通常我们会使用语句 1 初始化循环中所用的变量 (var i=0)。
+  * 语句 1 是可选的，也就是说不使用语句 1 也可以。
+  * 可以在语句 1 中初始化任意（或者多个）值：
+```
+for (var i=0,len=cars.length; i<len; i++)
+{
+  document.write(cars[i] + "<br>");
+}
+```
+* **语句 2
+  * 通常语句 2 用于评估初始变量的条件。
+  * 语句 2 同样是可选的。
+  * 如果语句 2 返回 true，则循环再次开始，如果返回 false，则循环将结束。
+  * 提示：如果省略了语句 2，那么必须在循环内提供 break。否则循环就无法停下来。这样有可能令浏览器崩溃。
+* **语句 3
+  * 通常语句 3 会增加初始变量的值。
+  * 语句 3 也是可选的。
+  * 语句 3 有多种用法。增量可以是负数 (i--)，或者更大 (i=i+15)。
+  * 语句 3 也可以省略（比如当循环内部有相应的代码时）
+```
+var i=0,len=cars.length;
+for (; i<len; )
+{
+  document.write(cars[i] + "<br>");
+i++;
+}
+```
+### For/In 循环
+* JavaScript for/in 语句循环遍历对象的属性
+```
+var person={fname:"John",lname:"Doe",age:25};
+for (x in person)
+{
+  txt=txt + person[x];
+}
+```
+### while循环
+### do/while 循环
+* do/while 循环是 while 循环的变体。该循环会执行一次代码块，在检查条件是否为真之前，然后如果条件为真的话，就会重复这个循环。
+```
+do
+  {
+  需要执行的代码
+  }
+while (条件);
+```
+### Break 和 Continue 语句
+* break 语句用于跳出循环。
+* continue 用于跳过循环中的一个迭代。
+* **JavaScript 标签
+  * 如需标记 JavaScript 语句，请在语句之前加上冒号： label：语句
+  * break 和 continue 语句仅仅是能够跳出代码块的语句
+  * continue 语句（带有或不带标签引用）只能用在循环中。
+  * break 语句（不带标签引用），只能用在循环或 switch 中。
+  * 通过标签引用，break 语句可用于跳出任何 JavaScript 代码块：
+```
+cars=["BMW","Volvo","Saab","Ford"];
+list:
+{
+	document.write(cars[0] + "<br>");
+	document.write(cars[1] + "<br>");
+	document.write(cars[2] + "<br>");
+	break list;
+	document.write(cars[3] + "<br>");
+	document.write(cars[4] + "<br>");
+	document.write(cars[5] + "<br>");
+}
+```
+## JavaScript 错误 - Throw、Try 和 Catch
+* try 语句测试代码块的错误。
+* catch 语句处理错误。
+* throw 语句创建自定义错误。
+```
+try
+  {
+  //在这里运行代码
+  }
+catch(err)
+  {
+  //在这里处理错误
+  }
+```
+### Throw 语句
+* throw 语句允许我们创建自定义错误。
+* 正确的技术术语是：创建或抛出异常（exception）。
+* 如果把 throw 与 try 和 catch 一起使用，那么您能够控制程序流，并生成自定义的错误消息。
+* 语法: throw exception
+* 异常可以是 JavaScript 字符串、数字、逻辑值或对象
 
 
 
