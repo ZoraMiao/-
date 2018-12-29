@@ -328,13 +328,13 @@ catch(err)
 * 显示文本：document.getElementById('demo').style.visibility = 'visible'
 ## DOM 事件
 * HTML DOM 使 JavaScript 有能力对 HTML 事件做出反应。
-> HTML 事件的例子：
-  > 当用户点击鼠标时
-  > 当网页已加载时
-  > 当图像已加载时
-  > 当鼠标移动到元素上时
-  > 当输入字段被改变时
-  > 当提交 HTML 表单时
+> HTML 事件的例子：<br>
+  > 当用户点击鼠标时<br>
+  > 当网页已加载时<br>
+  > 当图像已加载时<br>
+  > 当鼠标移动到元素上时<br>
+  > 当输入字段被改变时<br>
+  > 当提交 HTML 表单时<br>
   > 当用户触发按键时
 ### onload 和 onunload 事件
 * onload 和 onunload 事件会在用户进入或离开页面时被触发。
